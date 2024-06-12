@@ -7,7 +7,6 @@ fileInput.addEventListener('change', () => {
     numOfFiles.textContent = `${fileInput.files.length} Files Selected`;
 
     for(let i of fileInput.files){
-        let reader = new FileReader();
         let listItem = document.createElement('li');
         let fileName = i.name;
         let fileSize = (i.size / 1024).toFixed(1);
